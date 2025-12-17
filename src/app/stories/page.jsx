@@ -1,3 +1,4 @@
+import StoryCard from '@/components/StoryCard';
 import Title from '@/components/Title';
 import React from 'react';
 
@@ -10,7 +11,7 @@ const Stories = () => {
             name: "Ariful Islam",
             designition: "Frontend Developer",
             shortStory:
-                "Alice started her journey with HTML and CSS. Through consistent practice and building real-world projects, she became a confident React and Next.js developer.",
+                "Ariful started her journey with HTML and CSS. Through consistent practice and building real-world projects, she became a confident React and Next.js developer.",
             company: "Google",
         },
         {
@@ -19,22 +20,22 @@ const Stories = () => {
             name: "Ashiqur Rahman",
             designition: "Backend Developer",
             shortStory:
-                "Rahul learned Node.js and Express while in university. He enjoys building scalable APIs and solving performance problems in production systems.",
+                "Ashiqur learned Node.js and Express while in university. He enjoys building scalable APIs and solving performance problems in production systems.",
             company: "Amazon",
         },
         {
             id: 3,
             image: "https://i.ibb.co.com/vvmgMGM7/china.png",
-            name: "Sara Lee",
+            name: "Miss China",
             designition: "Full Stack Developer",
             shortStory:
-                "Sara believes in learning by doing. She built multiple MERN projects and now works on full-stack applications using Next.js and MongoDB.",
+                "China believes in learning by doing. She built multiple MERN projects and now works on full-stack applications using Next.js and MongoDB.",
             company: "Microsoft",
         },
         {
             id: 4,
             image: "https://i.ibb.co.com/tpShv1qB/rasel.png",
-            name: "Mohammad Rasel",
+            name: "Rasel Mia",
             designition: "Software Engineer",
             shortStory:
                 "Imran began coding with C and Java. Over time, he transitioned to web technologies and now focuses on building clean and maintainable systems.",
@@ -46,7 +47,7 @@ const Stories = () => {
             name: "Sabina Yasmin",
             designition: "UI Engineer",
             shortStory:
-                "Emily loves design and code. She specializes in turning beautiful designs into responsive, accessible web interfaces using Tailwind CSS.",
+                "Sabina loves design and code. She specializes in turning beautiful designs into responsive, accessible web interfaces using Tailwind CSS.",
             company: "Netflix",
         },
         {
@@ -55,7 +56,7 @@ const Stories = () => {
             name: "Sabilul Bari Zakir",
             designition: "UI Engineer",
             shortStory:
-                "Emily loves design and code. She specializes in turning beautiful designs into responsive, accessible web interfaces using Tailwind CSS.",
+                "Zakir loves design and code. She specializes in turning beautiful designs into responsive, accessible web interfaces using Tailwind CSS.",
             company: "Netflix",
         }
     ];
@@ -65,7 +66,7 @@ const Stories = () => {
             <Title>Explore Stories Of Developer</Title>
 
             {
-                stories.map(story => )
+                stories.map(story => <StoryCard key={story.id} story={story}></StoryCard>)
             }
         </div>
     );
