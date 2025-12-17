@@ -9,6 +9,7 @@ const About = () => {
 
             <nav>
                 <Link href={'/about/teams'}>Teams</Link>
+                <Link href={'/about/contact'}>Contact</Link>
             </nav>
         </div>
     );
