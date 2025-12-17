@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import NavLink from './NavLink';
 
 const Header = () => {
 
@@ -14,12 +15,12 @@ const Header = () => {
             <Link href='/' className='text-lg font-semibold'>😊 Dev Story</Link>
 
             <nav className='space-x-10'>
-                <Link href="/login">Login</Link>
-                <Link href="/register">Register</Link>
-                <Link href="/tutorials">Tutorials</Link>
-                <Link href="/stories">Stories</Link>
-                <Link href="/dashboard">Dashboard</Link>
-                <Link href="/about">About</Link>
+                <NavLink href="/login">Login</NavLink>
+                <NavLink href="/register">Register</NavLink>
+                <NavLink href="/tutorials">Tutorials</NavLink>
+                <NavLink href="/stories">Stories</NavLink>
+                <NavLink href="/dashboard">Dashboard</NavLink>
+                <NavLink href="/about">About</NavLink>
             </nav>
         </header>
     );
