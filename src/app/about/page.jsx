@@ -7,7 +7,7 @@ const About = () => {
         <div>
             <Title>Welcome To About</Title>
 
-            <nav>
+            <nav className='space-x-10'>
                 <Link href={'/about/teams'}>Teams</Link>
                 <Link href={'/about/contact'}>Contact</Link>
             </nav>
