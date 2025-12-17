@@ -8,8 +8,8 @@ const DashboardLayout = ({ children }) => {
                 <h2>Navigation</h2>
 
                 <div className='flex flex-col mt-10 pr-4'>
-                    <Link href={'/add-story'} className='hover:bg-gray-700 p-4 rounded'>Add Story</Link>
-                    <Link href={'/my-profile'} className='hover:bg-gray-700 p-4 rounded'>My Profile</Link>
+                    <Link href={'/dashboard/add-story'} className='hover:bg-gray-700 p-4 rounded'>Add Story</Link>
+                    <Link href={'/dashboard/my-profile'} className='hover:bg-gray-700 p-4 rounded'>My Profile</Link>
                     <Link href={'/settings'} className='hover:bg-gray-700 p-4 rounded'>Settings</Link>
                 </div>
             </div>
