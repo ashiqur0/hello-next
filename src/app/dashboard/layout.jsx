@@ -7,8 +7,10 @@ const DashboardLayout = ({ children }) => {
             <div className='col-span-3 border-r-2 min-h-screen'>
                 <h2>Navigation</h2>
 
-                <div className=''>
-                    <Link href={'/add-story'}>Add Story</Link>
+                <div className='flex flex-col mt-10 pr-4'>
+                    <Link href={'/add-story'} className='hover:bg-gray-700 p-4 rounded'>Add Story</Link>
+                    <Link href={'/my-profile'} className='hover:bg-gray-700 p-4 rounded'>My Profile</Link>
+                    <Link href={'/settings'} className='hover:bg-gray-700 p-4 rounded'>Settings</Link>
                 </div>
             </div>
             <div className='col-span-9'>
