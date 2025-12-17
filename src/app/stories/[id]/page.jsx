@@ -1,3 +1,4 @@
+import FullStory from '@/components/FullStory';
 import React from 'react';
 
 const FullStoryPage = async ({ params }) => {
@@ -107,15 +108,13 @@ const FullStoryPage = async ({ params }) => {
         },
     ];
 
-
-    const singleStory = stories.find(story => story.id == id);
-    if (!singleStory) {
+    const story = stories.find(story => story.id == id);
+    if (!story) {
         return <h2>No Story Found</h2>
     }
 
     return (
         <div>
-            Story Details Page
         </div>
     );
 };
