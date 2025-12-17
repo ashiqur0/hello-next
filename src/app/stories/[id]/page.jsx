@@ -115,6 +115,7 @@ const FullStoryPage = async ({ params }) => {
 
     return (
         <div>
+            <FullStory story={story}></FullStory>
         </div>
     );
 };
